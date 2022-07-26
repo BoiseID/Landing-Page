@@ -2,12 +2,12 @@
     background-color: #1F2937;
     color: white;
     font-family: "hero";
-    font-size: 48px;
+    font-size: 8px;
     height: 50px;
-    padding-left:90px;
-    padding-right: 90px;
+    padding-left:60px;
+    padding-right: 30px;
     padding-top: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;                            
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,13 +19,15 @@ ul{
     align-items: center;
     flex-direction: row;
     gap: 15px;
+    list-style-type: none;                                  
+    
+
 }
 
 a{
     font-size: 15px;
     color: #f9faf8;
-    list-style-type: none;
-
+    text-decoration: none;
 }
 
 
