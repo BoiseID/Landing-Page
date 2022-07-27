@@ -1,45 +1,92 @@
-.header{
-    background-color: #1F2937;
-    color: white;
-    font-family: "hero";
-    font-size: 8px;
-    height: 50px;
-    padding-left:60px;
-    padding-right: 30px;
-    padding-top: 0px;
-    padding-bottom: 10px;                            
-    display: flex;
-    flex-direction: row;
+.topcontainer{
+    height: 500px;
+    background: plum;
+    display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-ul{
+.topcontainer .header{
+    height:20%;
+    padding: 0px;
+    margin:10px;
+    width: 90%;
+    background: skyblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    background:grey;
+    width:10%;
+    height:80%;
+    margin:5px;
     display: flex;
     align-items: center;
-    flex-direction: row;
-    gap: 15px;
-    list-style-type: none;                                  
-    
+}
 
+ul{
+    background:grey;
+    display: flex;
+    text-decoration:none;
+    gap:15px;
+    list-style: none;               
 }
 
 a{
-    font-size: 15px;
-    color: #f9faf8;
-    text-decoration: none;
+    text-decoration:none;
 }
 
-
-.header .logo{
-    justify-content: left;
-    font-size: 24px;
-    color: #f9faf8;
-}
-
-.header .ul {
+.topcontainer .bottomheader {
+    height: 80%;
+    padding:0px;
+    margin:10px;
+    width: 90%;
+    background: skyblue;
     display: flex;
-    list-style-type: none;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
+}
+
+.topcontainer .bottomheader .leftcard{
+    background:grey;
+    width:50%;
+    height:80%;
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.topcontainer .bottomheader .leftcard .title{
+
+}
+
+.topcontainer .bottomheader .leftcard p{
+
+}
+
+.topcontainer .bottomheader .leftcard button{
+    width: 25%;
+}
+
+
+
+.topcontainer .bottomheader .rightcard{
+    background:grey;
+    width:50%;
+    height:80%;
+    margin:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topcontainer .bottomheader .rightcard img{
+    height: auto;
+    width: 90%;
 }
