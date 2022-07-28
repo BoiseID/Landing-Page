@@ -157,7 +157,7 @@ a{
 }
 
 /* done with upper container section*/
-
+/*
 .tres{
     margin:0px ;
     height: 300px;
@@ -186,3 +186,46 @@ a{
     justify-content: center;
     align-items: right;
 }
+*/
+/* done with third container section*/
+/*
+.quatro{
+    margin:0px ;
+    height: 200px;
+    padding: 40px;
+    background: plum;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.quatro .bigbox{
+    height: 80%;
+    width: 80%;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quatro .bigbox .text{
+    height: 90%;
+    width: 60%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quatro .bigbox .button{
+    height: 50%;
+    width: 15%;
+    background-color: blue;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+}
+*/
+/* done with third container section*/
+
