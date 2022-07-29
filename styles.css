@@ -1,19 +1,30 @@
-/*
-.topcontainer{
-    height: 500px;
-    background: plum;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.uno{
+    background: #1F2937;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
 }
 
-.topcontainer .header{
-    height:20%;
-    padding: 0px;
-    margin:10px;
+.uno .header{
+    height:40px;
+    padding-bottom: 10px;
     width: 90%;
-    background: skyblue;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,85 +33,90 @@
 }
 
 .logo{
-    background:grey;
-    width:10%;
-    height:80%;
-    margin:5px;
+    font-size: 24px;
+    color: #f9faf8;
+    width:25%;
+    height:30px;
     display: flex;
     align-items: center;
 }
 
 ul{
-    background:grey;
     display: flex;
     text-decoration:none;
-    gap:15px;
+    gap:25px;
     list-style: none;               
 }
 
 a{
     text-decoration:none;
+    font-size: 18px;
+    color:#E5E7EB;
 }
 
-.topcontainer .bottomheader {
-    height: 80%;
-    padding:0px;
-    margin:10px;
+.uno .bottomheader {
+    padding:4em;
+    margin:1%;
     width: 90%;
-    background: skyblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1em;
+    font-size: 18px;
+    color:#E5E7EB;
 }
 
-.topcontainer .bottomheader .leftcard{
-    background:grey;
-    width:50%;
-    height:80%;
-    margin:5px;
+.uno .bottomheader .leftcard{
+    width:60%;
+    height:95%;
+    margin: 2px;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
-}
-.topcontainer .bottomheader .leftcard .title{
-
+    gap:5px;
 }
 
-.topcontainer .bottomheader .leftcard p{
-
+.uno .bottomheader .leftcard .big{
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
 }
 
-.topcontainer .bottomheader .leftcard button{
+.uno .bottomheader .leftcard .description{
+    font-size: 24px;
+}
+
+.uno .bottomheader .leftcard button{
     width: 25%;
+    background-color: #3882f6;
+    border-radius: 4px;
+
 }
 
 
 
-.topcontainer .bottomheader .rightcard{
-    background:grey;
-    width:50%;
-    height:80%;
-    margin:5px;
+.uno .bottomheader .rightcard{
+    width:60%;
+    height:95%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2px;
 }
 
-.topcontainer .bottomheader .rightcard img{
-    height: auto;
-    width: 90%;
+.uno .bottomheader .rightcard img{
+    max-height: 100%;
+    max-width: 100%;
 }
 
-*/
+/* informational container*/
 
-/* done with the top container, moving onto the uppercontainer*/
 
-/*
-.uppercontainer{
-    margin:0px ;
-    height: 400px;
-    background: plum;
+.dos{
+
+    padding: 3em;
+    background-color: whitesmoke;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -108,27 +124,32 @@ a{
     gap:10px;
 }
 
-.uppercontainer .random{
+.dos .random{
     height: 10%;
+    padding: 1em;
     width: 50%;
-    background-color: skyblue;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.uppercontainer .sublist{
+.dos .sublist{
     display: flex;
     flex-direction: row;
+    font-style: italic;
     width: 90%;
     height: 85%;
-    background-color: skyblue;
+    padding-bottom: 5px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.uppercontainer .sublist .holder{
-    background-color: grey;
+.dos .sublist .holder{
     display: flex;
     width: 20%;
     height: 95%;
@@ -136,17 +157,17 @@ a{
     flex-direction: column;
     justify-content: space-between;
     padding: 3px;
+    flex-wrap: wrap;
 }
 
-.uppercontainer .sublist .holder img{
+.dos .sublist .holder img{
 
     max-height: 60%;
     max-width: 100%;
     border-radius: 15px;
 }
 
-.uppercontainer .sublist .holder div{
-    background-color: aqua;
+.dos .sublist .holder div{
     height: 38%;
     width: 85%;
     display: flex;
@@ -156,44 +177,43 @@ a{
     text-align: center;
 }
 
-/* done with upper container section*/
-/*
+/* Quote container section*/
+
 .tres{
-    margin:0px ;
-    height: 300px;
-    background: plum;
+    background-color: #E5E7EB;
     display:flex;
     flex-direction: column;
     align-items: center;
     gap:10px;
-    padding:20px;
+    padding:4em;
 }
 
 .tres .quote{
-    height: 80%;
-    width: 70%;
-    background-color: skyblue;
+    width: 80%;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: light;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .tres .speaker{
-    height: 15%;
-    width: 50%;
-    background-color: skyblue;
+    height: 30px;
+    width: 80%;
+    font-size: 25px;
+    font-style: italic;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: right;
 }
-*/
-/* done with third container section*/
-/*
+
+/* signup container section*/
+
 .quatro{
-    margin:0px ;
-    height: 200px;
-    padding: 40px;
-    background: plum;
+    padding: 6em;
+    width: 100%;
+    background: whitesmoke;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -201,48 +221,67 @@ a{
 }
 
 .quatro .bigbox{
-    height: 80%;
-    width: 80%;
-    background-color: skyblue;
+    padding: 3em;
+    width: 70%;
+    background-color: #3882f6;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
 .quatro .bigbox .text{
     height: 90%;
-    width: 60%;
-    background-color: lightblue;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-size: 18px;
+    color: #f9faf8;
+}
+.quatro .bigbox .text .lasttitle{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.quatro .bigbox .pressme{
+    height: 26px;
+    width: 15%;
+    font-size: 18px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: 2px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.quatro .bigbox .button{
-    height: 50%;
-    width: 15%;
-    background-color: blue;
-    display: flex;
-    justify-content: right;
-    align-items: right;
+    border-radius: 4px;
 
 }
-*/
-/* done with third container section*/
+
+.quatro .bigbox{
+    size: 25px;
+}
+
+/* footer section*/
 
 .footer{
-    height: 30px;
-    background: plum;
+    height: 2em;
+    width: 100%;
+    background: #1F2937;
     display:flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .footer .footertext{
-    height: 80%;
-    background: skyblue;
+    height: 2em;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color: #f9faf8;
 }
